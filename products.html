@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Wild Life Coffee</title>
+    <style>
+
+        html {
+            scroll-behavior: smooth; 
+        }
+
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            background: linear-gradient(to bottom,  hsl(24, 100%, 76%),  hsl(29, 53%, 24%));
+        }
+
+        .main-box {
+            width: 90%;
+            min-height: 80vh;
+            margin: 30px;
+            padding: 30px; 
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.5s ease;
+            color: white; 
+        }
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        }
+
+        .box {
+        width: 250px;
+        border: 1px solid #ce8c4e;
+        padding: 15px;
+        text-align: center;
+        background-color: #ce8c4e;
+        border-radius: 20px;
+        display: flex;              
+        flex-direction: column;     
+        justify-content: space-between;
+        transition: all 0.5s ease; 
+        }
+
+        .box img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px; 
+        }   
+
+        .box:hover {
+        background: #da9453; 
+        box-shadow: 0 12px 30px rgb(0, 0, 0);
+        transform: translateY(-8px) scale(1.05);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+        }
+
+        .box h3 {
+        margin: 10px 0;
+        }
+
+        .box p {
+        font-size: 14px;
+        }
+
+        .box button {
+        align-self: center;        
+        margin-top: 10px;
+        padding: 8px 12px;
+        background-color: #6b4226;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        }
+
+        .title {
+            text-align: center;
+            font-family: Brush Script MT;
+            font-size: 90px;
+            text-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+        }
+
+        .box button:hover {
+        background-color: #8b5a2b; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transform: scale(1.05);
+        }
+
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1 class="title">Sips of Nature</h1>
+        <div class="container">
+        <div class="box">
+            <img src="Images/espresso.jpg" alt="Espresso">
+            <h3>Espresso</h3>
+            <h4>1.5$</h4>
+            <p>Strong and bold, our signature espresso shot.</p>
+            <button>Order</button>
+        </div>
+        <div class="box">
+            <img src="Images/capuccino.jpg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <h4>1.5$</h4>
+            <p>Rich espresso topped with frothy milk foam.</p>
+            <button>Order</button>
+        </div>
+        <div class="box">
+            <img src="Images/latte.jpg" alt="Latte">
+            <h3>Latte</h3>
+            <h4>1.5$</h4>
+            <p>Smooth blend of espresso and steamed milk.</p>
+            <button>Order</button>
+        </div>
+        <div class="box">
+            <img src="Images/mocha.jpg" alt="Mocha">
+            <h3>Mocha</h3>
+            <h4>1.5$</h4>
+            <p>Chocolate-infused coffee delight.</p>
+            <button>Order</button>
+        </div>
+        <div class="box">
+            <img src="Images/exclusivecoffee.jpg" alt="Exclusive Wild Coffee">
+            <h3>Exclusive Wild Coffee</h3>
+            <h4>4$</h4>
+            <p>A rare blend sourced from the wild, offering a unique taste adventure.</p>
+            <button>Order</button>
+        </div>
+        <div class="box">
+            <img src="Images/animalcoffee.jpg" alt="Premium Animal-Themed Coffee">
+            <h3>Premium Animal-Themed Coffee</h3>
+            <h4>2$</h4>
+            <p>Inspired by the spirit of wildlife, crafted with premium beans and artistry.</p>
+            <button>Order</button>
+        </div>
+    </div>
+</body>
+</html>
+

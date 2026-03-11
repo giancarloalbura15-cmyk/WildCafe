@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wildlifes</title>
+    <style>
+        html {
+            scroll-behavior: smooth; 
+        }
+
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            background: linear-gradient(to bottom,  hsl(29, 53%, 24%),  hsl(29, 53%, 24%));
+        }
+
+        .main-box {
+            width: 90%;
+            min-height: 80vh;
+            margin: 30px auto;
+            padding: 30px;
+            background: url("Images/savannah.jpg") no-repeat center center;
+            background-size: cover; 
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.5s ease;
+            color: white; 
+}
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            width: 250px;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 15px;
+            text-align: center;
+            background:hsla(27, 42%, 46%, 0.85);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.4s ease;
+        }
+
+        .box:hover {
+            background: hsla(27, 90%, 69%, 0.85);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+            transform: translateY(-8px) scale(1.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .box img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .box h3 {
+            margin: 10px 0;
+        }
+
+        .box p {
+            font-size: 14px;
+        }
+
+        .box button {
+            align-self: center;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: rgba(107, 66, 38, 0.75);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .box button:hover {
+            background: rgba(107, 66, 38, 0.95);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+            transform: scale(1.1);
+            backdrop-filter: blur(6px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <h1 style="text-align:center;">Wildlifes</h1>
+        <div class="container">
+            <div class="box">
+                <img src="Images/lion.jpg" alt="Lion">
+                <h3>Lion</h3>
+                <p>The king of the jungle, bold and majestic.</p>
+                <button>Discover</button>
+            </div>
+            <div class="box">
+                <img src="Images/Tiger.jpg" alt="Tiger">
+                <h3>Tiger</h3>
+                <p>Powerful stripes and fierce spirit.</p>
+                <button>Discover</button>
+            </div>
+            <div class="box">
+                <img src="Images/monkey.jpg" alt="Monkey">
+                <h3>Monkey</h3>
+                <p>Playful and curious, full of energy.</p>
+                <button>Discover</button>
+            </div>
+            <div class="box">
+                <img src="Images/Eagle.jpg" alt="Philippine Eagle">
+                <h3>Philippine Eagle</h3>
+                <p>Majestic national bird, soaring high.</p>
+                <button>Discover</button>
+            </div>
+            <div class="box">
+                <img src="Images/elephant.jpg" alt="Elephant">
+                <h3>Elephant</h3>
+                <p>Gentle giant with wisdom and strength.</p>
+                <button>Discover</button>
+            </div>
+            <div class="box">
+                <img src="Images/capybara.jpg" alt="Capybara">
+                <h3>Capybara</h3>
+                <p>Calm and friendly, nature’s peaceful companion.</p>
+                <button>Discover</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
